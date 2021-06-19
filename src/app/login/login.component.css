@@ -1,0 +1,29 @@
+#lh{
+    color:rgb(228, 155, 46);
+    font-family: 'georgia';
+    font-weight: bolder;
+    
+}
+#un{
+    color:rgb(215, 223, 210);
+    font-family: 'lucida';
+    font-style: italic;
+}
+#pd{
+    color:rgb(218, 224, 214);
+    font-family: 'lucida';
+    font-style: italic;
+}
+#dhaa{
+    color:whitesmoke;
+    font-family: 'lucida';
+    font-style: italic;
+}
+#lb{
+    background-color: rgb(184, 255, 170);
+    font-family: 'comic sans ms';
+}
+
+.kkk{
+    background: linear-gradient(#e66465, #9198e5);
+  }

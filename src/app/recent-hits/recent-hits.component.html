@@ -1,0 +1,45 @@
+<div class="container-fluid" style="background: rgb(23,0,36);
+background: linear-gradient(90deg, rgba(23,0,36,1) 0%, rgba(112,1,137,1) 46%, rgba(255,0,143,1) 100%);">
+<div class="kk p-3">
+    <input type="text" name="" id="" placeholder="search here" class="form-control m-3 " [(ngModel)]="searchTerm">
+</div>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5">
+<div class="col p-4" *ngFor="let recentHitObj of recentHitsData | search:searchTerm;let ind=index">
+<div class="card">
+    <img class="d-block mx-auto" src="{{recentHitObj.image}}" width="100%">
+     <div class="card-footer">
+          <p class="k">{{recentHitObj.title}}</p>
+            <p>Rating <i class="far fa-star text-warning"></i>:{{recentHitObj.imDbRating}}</p>
+            <button class="btn btn-sm" style="background-color: rgb(238, 229, 153);"><i class="far fa-thumbs-up"></i> vote</button>
+             
+            <button class="btn btn-secondary d-inline float-end btn-sm" style="background-color: gray;" [attr.data-bs-target]="'#card'+ind" data-bs-toggle="modal" ><i class="fas fa-info-circle"></i></button>
+                <div class="modal" [attr.id]="'card'+ind" data-bs-backdrop="static">
+                 <div class="modal-dialog modal-dialog-centered " >
+                    <div class="modal-content">
+                            <div class="modal-body" style="background-color: rgba(53, 53, 53, 0.959);">
+                                <button class="btn btn-danger float-end btn-sm" data-bs-dismiss="modal">X</button>
+                                <div class="row ">
+                                    <div class="col-sm-6">
+                                        <img src="{{recentHitObj.image}}" width="100%">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="ms-3 mt-5 text-white">
+                                            <p class="lead">{{recentHitObj.title}}</p>
+                                            <p class="lead">Rating <i class="far fa-star text-warning"></i>:{{recentHitObj.imDbRating}}</p>
+                                            <p class="lead">Weekend gross:{{recentHitObj.weekend}}</p>
+                                            <p class="lead">Gross :{{recentHitObj.gross}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="btn float-end btn-sm" style="background-color: rgb(199, 190, 190);">Watch Movie</button>
+                            </div>
+                            
+                        </div>      
+                    </div>
+                </div>
+        </div>
+        </div>
+        </div>
+        </div>

@@ -1,0 +1,16 @@
+<div class="container-fluid" style="background: rgb(23,0,36);
+background: linear-gradient(90deg, rgba(23,0,36,1) 0%, rgba(112,1,137,1) 46%, rgba(255,0,143,1) 100%);">
+<div class="kk p-3">
+    <input type="text" name="" id="" placeholder="search here" class="form-control m-3 " [(ngModel)]="searchTerm">
+</div>
+
+<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
+    <div class="col p-4" *ngFor="let asianObj of asianMovieData |search:searchTerm | paginate: { itemsPerPage:12, currentPage:p};let ind=index">
+        <app-asian-movie-info [asianMovieObj]=asianObj [index]=ind></app-asian-movie-info>
+    </div>
+</div>
+
+<div class="text-center mt-5 mb-5 p-3">
+    <pagination-controls (pageChange)="p=$event"></pagination-controls>
+</div>
+</div>

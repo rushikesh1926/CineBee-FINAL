@@ -1,0 +1,74 @@
+<!-- <div class="card mt-3">
+                <img class="d-block mx-auto" src="{{movieobj.image}}" width="100%">
+                <div class="card-footer">
+                    <p class="k">{{movieobj.title}}</p>
+                    <p>Rating <i class="far fa-star text-warning"></i>:{{movieobj.imDbRating}}</p>
+
+                    <button class="btn btn-sm" style="background-color: rgb(238, 229, 153);"><i class="far fa-thumbs-up"></i> vote</button>
+
+                    <button class="btn btn-sm d-inline float-end " style="background-color: rgb(196, 188, 188);" [attr.data-bs-target]="'#card'+index" data-bs-toggle="modal" ><i class="fas fa-info-circle"></i></button>
+                    
+                    <div class="modal" [attr.id]="'card'+index" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered ">
+                            <div class="modal-content">
+                                <div class="modal-body" style="background-color: rgba(53, 53, 53, 0.959);">
+                                    <button class="btn btn-danger float-end" data-bs-dismiss="modal">X</button>
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <img src="{{movieobj.image}}" width="100%">
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <div class="ms-5 mt-5">
+                                            
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <button class="btn btn-warning float-end ">yy</button>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>-->
+
+            <div class="card m-2">
+                <img class="d-block mx-auto" src="{{movieobj.image}}" width="100%">
+                 <div class="card-footer">
+                      <p class="k">{{movieobj.title}}</p>
+                    <p>Rating <i class="far fa-star text-warning"></i>:{{movieobj.imDbRating}}</p>
+                    <button class="btn btn-sm" style="background-color: rgb(238, 229, 153);"><i class="far fa-thumbs-up"></i> vote</button>
+                         
+                        <button class="btn btn-sm d-inline float-end " style="background-color: rgb(196, 188, 188);" [attr.data-bs-target]="'#card'+index" data-bs-toggle="modal" ><i class="fas fa-info-circle"></i></button>
+                            <div class="modal" [attr.id]="'card'+index" data-bs-backdrop="static">
+                             <div class="modal-dialog modal-dialog-centered ">
+                                <div class="modal-content">
+                                        <div class="modal-body" style="background: rgba(53, 53, 53, 0.959);">
+                                            <button class="btn btn-danger float-end" data-bs-dismiss="modal">X</button>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <img class="img-fluid mt-5" src="{{movieobj.image}}" width="100%">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="ms-2 mt-5 text-white">
+                                                        <p class="lead"><strong>{{movieobj.title}}</strong></p>
+                                                        <p><strong>Year </strong>: {{movieobj.year}}</p>
+                                                        <p><strong>Crew</strong> : {{movieobj.crew}}</p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <button class="btn btn-warning float-end btn-sm"><i class="fas fa-plus"></i> Wish list</button>
+                                                    <button class="btn btn-info btn-sm"><a href="https://www.youtube.com/" style="text-decoration: none; color: azure;">Watch Trailer</a></button>
+                                                    </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>      
+                                </div>
+                            </div>
+                    </div>
+                    
+
+        

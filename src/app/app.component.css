@@ -1,0 +1,21 @@
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  
+ color:rgb(216, 149, 25);
+}
+
+#k{
+    font-family: 'comic sans ms';
+    font-weight: bolder;
+     
+}
+
+#t{
+    font-size: 25px;
+    font-family: 'Satisfy', cursive;;
+   color: wheat;
+   color:rgb(168, 92, 5);
+   font-weight: bolder;
+
+}
+
