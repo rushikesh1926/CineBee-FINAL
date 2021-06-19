@@ -30,7 +30,7 @@
             <div class="mb-3">
                 <label for="un" class="form-label text-dark"><i class="far fa-user"></i>Username</label>
         
-                <input type="text" class="form-control" id="un" name="username" ngModel required minlength="4"
+                <input type="text" class="form-control text-dark" id="un" name="username" ngModel required minlength="4"
                     #refUsername="ngModel" autocomplete="off">
         
                 <p class="text-danger" *ngIf="(ref.submitted||refUsername.touched)&&refUsername.errors?.required">*

@@ -5,7 +5,7 @@ background: linear-gradient(90deg, rgba(23,0,36,1) 0%, rgba(112,1,137,1) 46%, rg
     </div>
 
 
-<div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
     <div class="col p-4" *ngFor="let tvobj of tvShowData |search:searchTerm | paginate: { itemsPerPage:12, currentPage:p};let ind=index">
         <app-tv-info [tvshowsobj]=tvobj  [index]=ind></app-tv-info>
     </div>
